@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .strips{
+        margin: 0px 10px;
+    }
+    .container{
+        width: 100%;
+        height: 20em;
+        display: flex;
+        border: 2px solid red;
+        align-items: center;
+        justify-content: center;
+    }
+    #strip1{
+        border: 2px solid blanchedalmond;
+        position: sticky;
+        width: 10px;
+        height: 100px;
+        animation-name: strip1;
+        animation-timing-function: ease-in-out;
+        animation-duration: 01s;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+    }
+    @keyframes strip1{
+        from{
+            height: 10px;
+            /* left: 0rem; */
+        }
+        to{
+            height: 100px;
+            /* left: 100px; */
+        }
+    }
+    #strip2{
+        border: 2px solid blanchedalmond;
+        position: sticky;
+        width: 10px;
+        height: 100px;
+        animation-name: strip2;
+        animation-timing-function: ease-in-out;
+        animation-duration: 01s;
+        animation-delay: 0.2s;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+    }
+    @keyframes strip2{
+        from{
+            height: 10px;
+            /* left: 0rem; */
+        }
+        to{
+            height: 100px;
+            /* left: 100px; */
+        }
+    }
+    #strip3{
+        border: 2px solid blanchedalmond;
+        position: sticky;
+        width: 10px;
+        height: 100px;
+        animation-name: strip3;
+        animation-timing-function: ease-in-out;
+        animation-duration: 01s;
+        animation-delay: 0.4s;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+    }
+    @keyframes strip3{
+        from{
+            height: 10px;
+            /* left: 0rem; */
+        }
+        to{
+            height: 100px;
+            /* left: 100px; */
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="strips" id="strip1"></div>
+        <div class="strips" id="strip2"></div>
+        <div class="strips" id="strip3"></div>
+        <div class="strips" id="strip4"></div>
+        <div class="strips" id="strip5"></div>
+        <div class="strips" id="strip6"></div>
+    </div>
+</body>
+</html>

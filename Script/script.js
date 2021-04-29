@@ -10,6 +10,7 @@ let imgP = document.getElementById("imgP");
 let signInInNav = document.getElementById("signInInNav");
 let MainBtnSubmitInNav = document.getElementById("MainBtnSubmitInNav");
 let textHeadLatestSoftware = document.getElementById("textHeadLatestSoftware");
+let textHeadWindowsGames = document.getElementById("textHeadWindowsGames");
 let darkmodeBtnMain = document.getElementById("darkmodeBtnMain");
 let BiggestPrent = document.getElementById("BiggestPrent");
 let navigation = document.getElementById("navigation");
@@ -173,7 +174,8 @@ darkmodeBtnMain.addEventListener("click", function () {
         windowOfThreeDotBtn.style.backgroundColor=LiteBlack;
         MainSearchInNav.style.backgroundColor=MoreLiteBlack;
         MainSearchInNav.style.color=White;
-        textHeadLatestSoftware.style.color="#ff6a00";
+        textHeadLatestSoftware.style.color="#bebdef";
+        textHeadWindowsGames.style.color="#bebdef";
         CreateAnAccount.style.color="#c593ff";
         MainBtnSubmitInNav.style.backgroundColor="#ffe8e8";
         MainBtnSubmitInNav.style.borderColor=White;
@@ -181,7 +183,8 @@ darkmodeBtnMain.addEventListener("click", function () {
         helpinNav.setAttribute("src", "Files/helpdark.png")
         
     } else {
-        textHeadLatestSoftware.style.color="#0400ff";
+        textHeadWindowsGames.style.color="#3a3977";
+        textHeadLatestSoftware.style.color="#3a3977";
         appltthemetext.textContent="Apply Dark Theme";
         MainSearchInNav.style.color=Black;
         CreateAnAccount.style.color="#551a8b";

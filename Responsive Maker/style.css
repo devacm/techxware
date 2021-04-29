@@ -563,6 +563,7 @@ body{
     font: caption;
     font-size: 1.2rem;
     background-color: white;
+    /* background-color: transparent; */
 }
 .imagesCategoryClass{
     width: 2.5rem;
@@ -571,7 +572,7 @@ body{
 
 }
 .AniArtiClass3ForP{
-    animation: Art1 ease-in-out 1s 0.2s both 1;
+    animation: Art1 ease-in-out 0.7s 0s both 1;
 }
 @keyframes Art1 {
     from{
@@ -585,7 +586,7 @@ body{
     }
 }
 .AniArtiClass4ForP{
-    animation: Art4 ease-in-out 1s 0.2s both 1;
+    animation: Art4 ease-in-out 0.7s 0s both 1;
 }
 @keyframes Art4 {
     from{
@@ -599,7 +600,7 @@ body{
     }
 }
 .AniArtiClass5ForP{
-    animation: Art5 ease-in-out 1s 0.5s both 1;
+    animation: Art5 ease-in-out 0.7s 0.3s both 1;
 }
 @keyframes Art5 {
     from{
@@ -613,7 +614,7 @@ body{
     }
 }
 .AniArtiClass6ForP{
-    animation: Art6 ease-in-out 1s 0.8s both 1;
+    animation: Art6 ease-in-out 0.7s 0.6s both 1;
 }
 @keyframes Art6 {
     from{
@@ -627,7 +628,7 @@ body{
     }
 }
 .AniArtiClass3ForPReverse{
-    animation: Art2 ease-in-out 1s 0.2s both 1;
+    animation: Art2 ease-in-out 0.7s 0s both 1;
 }
 @keyframes Art2 {
     from{
@@ -653,7 +654,7 @@ body{
     }
 }
 .AniArtiClass5rForPReverse{
-    animation: Art5r ease-in-out 1s 0.2s both 1;
+    animation: Art5r ease-in-out 1s 0.5s both 1;
 }
 @keyframes Art5r {
     from{
@@ -666,7 +667,7 @@ body{
     }
 }
 .AniArtiClass6rForPReverse{
-    animation: Art6r ease-in-out 1s 0.2s both 1;
+    animation: Art6r ease-in-out 1s 0.8s both 1;
 }
 @keyframes Art6r {
     from{
@@ -678,35 +679,193 @@ body{
         transform: translateY(8rem);
     }
 }
+
+#item1{
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item2{
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item3{
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item4{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item5{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item6{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item7{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item8{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item9{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item10{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item11{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
+#item12{
+    
+    transform: translateY(8rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20rem;
+    height: 20rem;
+    font: caption;
+    font-size: 1.2rem;
+    background-color: white;
+}
 #containerCategory1{
-    background-color: whitesmoke;
+    background-color: transparent;
     width: 100%;
     height: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     transform: translateY(8rem);
+    /* border:  2px solid red; */
 }
 #containerCategory2{
-    background-color: whitesmoke;
+    background-color: transparent;
     width: 100%;
     height: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     transform: translateY(8rem);
+    /* border:  2px solid red; */
 }
 #containerCategory3{
-    background-color: whitesmoke;
+    background-color: transparent;
     width: 100%;
     height: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     transform: translateY(8rem);
+    /* border:  2px solid red; */
 }
 #containerCategory4{
-    background-color: whitesmoke;
+    /* border:  2px solid red; */
+    background-color: transparent;
     width: 100%;
     height: 20rem;
     display: flex;
@@ -728,4 +887,12 @@ body{
 #itemCatefory5{
     display: flex;
     justify-content: center;
+}
+
+
+/* All Media Qurries  */
+@media screen and (max-width: 1140px) {
+    #mainNav{
+        display: none;
+    }
 }

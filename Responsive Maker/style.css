@@ -946,23 +946,23 @@ body{
 
 
 /* All Media Qurries  */
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 640px) {
     #mainNav{
-        width: 360px;
+        width: 640px;
         height: 80px;
     }
     #navigation{
         height: 80px;
     }
-    #NaviLinksSec{
+    #LinkInNav4{
         display: none;
     }
     #MainSearchInNav{
         display: none;
     }
     #NaviLinksSec{
-        width: 360px;
-        border:  2px solid red;
+        width: 640px;
+        /* border:  2px solid red; */
     }
     #SearchInNavP{
         width: 100px;
@@ -1007,30 +1007,69 @@ body{
     }
     #contains_LatestSoftwareLinks{
         flex-direction: row;
-        width: 360px;
+        width: 640px;
+        height: 500px;
     }
     #MainContainerOfLatestSoftware{
-        width: 360px;
+        width: 640px;
     }
     .latestContents{
         width: 200px;
     }
     #containsWindowsGamesLinks{
-        flex-direction: column;
+        flex-direction: row;
     }
-    #latestSoftwaresContain3_1{
-        border:  2px solid red;
+    #MainContainerOfLatestSoftware{
+        height: 300px;
+    }
+    #latestSoftwaresContain3_2{
+        display: none;
+    }
+    /* Latest Games Section  */
+    #MainContainerOfWindowsGames{
+        width: 640px;
+        height: 300px;
+    }
+    #latestSoftwaresContain3_6{
+        display: none;
+    }
+    .WindowsGames{
+        width: 200px;
+    }
+    /* Categories Section  */
+    #containsSoftwreByCategoryMainP{
+        width: 640px;
+        height: 4100px;
+        /* border:  2px solid red; */
+
+    }
+    #headCategory{
+        width: 640px;
+        height: 2rem;
+        /* border: 2px solid red; */
     }
     #containerCategory1{
         flex-direction: column;
+        width: 640px;
+        /* border: 2px solid red; */
+        height: 1000px;
     }
     #containerCategory2{
         flex-direction: column;
+        width: 640px;
+        /* border: 2px solid red; */
+        height: 1000px;
     }
     #containerCategory3{
         flex-direction: column;
+        width: 640px;
+        /* border: 2px solid red; */
+        height: 1000px;
     }
     #containerCategory4{
         flex-direction: column;
+        width: 640px;
+        /* border: 2px solid red; */
+        height: 1000px;
     }
 }

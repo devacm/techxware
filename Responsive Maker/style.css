@@ -340,13 +340,11 @@ body{
     }
 }
 #textHeadLatestSoftware{
-    /* ont: caption; */
-    font-family: 'Source Code Pro', monospace;
-    color: #0400ff;
+    font: caption;
+    color: #3a3977;
     width: 98.75%;
-    background-color: rgba(137, 43, 226, 0.342);
+    background-color: rgba(145, 145, 145, 0.342);
     height: 2rem;
-    /* margin: 0.5rem 1rem; */
     margin: 0pc;
     padding-left: 1rem;
     font-size: 1.5rem;
@@ -360,11 +358,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     height: 20rem;
     width: 100%;
     /* border: 2px solid red; */
-    flex-direction: column;
+    flex-direction: row;
 }
 #latestSoftwaresContain3_1{
     flex-direction: column;
@@ -514,15 +512,16 @@ body{
     height: 18rem;
 }
 #textHeadWindowsGames{
-    color: red;
+    
+    font: caption;
+    color: rgb(99, 53, 53);
     
     width: 98.75%;
-    background-color: #b6f5ec;
+    background-color: rgba(145, 145, 145, 0.342);
     height: 2rem;
     margin: 0pc;
     padding-left: 1rem;
     font-size: 1.5rem;
-    font-family: 'Source Code Pro', monospace;
     font-weight: bolder;
     display: flex;
     align-items: center;
@@ -534,7 +533,7 @@ body{
     /* flex-wrap: wrap; */
 }
 .WindowsGames{
-    width: 20rem;
+    width: 18rem;
     height: 3rem;
     background-color: whitesmoke;
     margin: 0rem 3rem;
@@ -946,6 +945,21 @@ body{
 
 
 /* All Media Qurries  */
+@media (min-width:640px) and ( max-width: 1115px) {
+#mainNav{
+    width: 1115px;
+    background-color: red;
+}
+#navigation{
+    width: 1115px;
+}
+#BiggestPrent{
+    width: 1115px;
+}
+#textHeadLatestSoftware{
+    width: 1115px;
+}
+}
 
 @media (min-width:360px) and ( max-width: 640px) {
     #mainNav{
@@ -1157,7 +1171,7 @@ body{
         height: 50px;
     }
     #contains_LatestSoftwareLinks{
-        flex-direction: row;
+        flex-direction: column;
         width: 360px;
         height: 500px;
     }

@@ -361,13 +361,71 @@ body{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    height: 20rem;
+    width: 100%;
+    /* border: 2px solid red; */
+    flex-direction: column;
+}
+#latestSoftwaresContain3_1{
+    flex-direction: column;
+    display: flex;
+    width: 18rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 13.5rem;
+    /* border:  2px solid red; */
+}
+#latestSoftwaresContain3_2{
+    flex-direction: column;
+    display: flex;
+    width: 18rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 13.5rem;
+    /* border:  2px solid red; */
+}
+#latestSoftwaresContain3_3{
+    flex-direction: column;
+    display: flex;
+    width: 18rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 13.5rem;
+    /* border:  2px solid red; */
+}
+#latestSoftwaresContain3_4{
+    flex-direction: column;
+    display: flex;
+    width: 18rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 13.5rem;
+    /* border:  2px solid red; */
+}
+#latestSoftwaresContain3_5{
+    flex-direction: column;
+    display: flex;
+    width: 18rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 13.5rem;
+    /* border:  2px solid red; */
+}
+#latestSoftwaresContain3_6{
+    flex-direction: column;
+    display: flex;
+    width: 18rem;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 13.5rem;
+    /* border:  2px solid red; */
 }
 .latestContents{
-    width: 20rem;
+    width: 18rem;
     height: 3rem;
     background-color: whitesmoke;
-    margin: 0rem 3rem;
-    margin-top: 1rem;
+    /* margin: 0rem 3rem;
+    margin-top: 1rem; */
     text-decoration: none;
     color: black;
     font: caption;
@@ -392,9 +450,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#latestContent8{
-    margin-bottom: 0.5rem;
 }
 #MainShowMoreBtn1{
     background-color: whitesmoke;
@@ -476,7 +531,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .WindowsGames{
     width: 20rem;
@@ -891,8 +946,39 @@ body{
 
 
 /* All Media Qurries  */
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 360px) {
     #mainNav{
+        width: 864px;
+        height: 80px;
+    }
+    #navigation{
+        height: 80px;
+    }
+    #MainSearchInNav{
         display: none;
+    }
+    #NaviLinksSec{
+        width: 800px;
+        border:  2px solid red;
+    }
+    #SearchInNavP{
+        width: 100px;
+    }
+    #MainBtnSubmitInNav{
+        height: 60px;
+        width: 60px;
+    }
+    #MainImgInSubInNav{
+        height: 40px;
+        width: 40px;
+    }
+    #ThreeDotBtnMain{
+        height: 60px;
+        width: 60px;
+
+    }
+    .dotsInThreeDotBtn{
+        width: 13px;
+        height: 13px;
     }
 }

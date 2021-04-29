@@ -948,7 +948,7 @@ body{
 /* All Media Qurries  */
 @media screen and (max-width: 360px) {
     #mainNav{
-        width: 864px;
+        width: 720px;
         height: 80px;
     }
     #navigation{
@@ -958,7 +958,7 @@ body{
         display: none;
     }
     #NaviLinksSec{
-        width: 800px;
+        width: 720px;
         border:  2px solid red;
     }
     #SearchInNavP{
@@ -980,5 +980,29 @@ body{
     .dotsInThreeDotBtn{
         width: 13px;
         height: 13px;
+    }
+    #windowOfThreeDotBtn{
+        height: 300px;
+        width: 300px;
+        top: 80px;
+    }
+    #feedback{
+        width: 280px;
+        height: 50px;
+    }
+    #otherSites{
+        width: 280px;
+        height: 50px;
+    }
+    #darkmodeBtnMain{
+        width: 280px;
+        height: 50px;
+    }
+    #darkmodeBtnMain{
+        width: 280px;
+        height: 50px;
+    }
+    #contains_LatestSoftwareLinks{
+        flex-direction: row;
     }
 }

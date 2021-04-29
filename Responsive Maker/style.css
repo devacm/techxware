@@ -891,7 +891,7 @@ body{
 
 
 /* All Media Qurries  */
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 720px) {
     #mainNav{
         display: none;
     }

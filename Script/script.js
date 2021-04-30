@@ -111,8 +111,24 @@ let MainContainerOfLatestSoftware = document.getElementById("MainContainerOfLate
 let body = document.body;
 let x_Axis = body.scrollLeft;
 
+let contains_LatestSoftwareLinks = document.getElementById("contains_LatestSoftwareLinks");
+let containsWindowsGamesLinks = document.getElementById("containsWindowsGamesLinks");
+let MainContainerOfWindowsClassGames = document.getElementById("MainContainerOfWindowsClassGames");
+let containerCategory1 = document.getElementById("containerCategory1");
+let containerCategory2 = document.getElementById("containerCategory2");
+let containerCategory3 = document.getElementById("containerCategory3");
+let containerCategory4 = document.getElementById("containerCategory4");
+let headCategory = document.getElementById("headCategory");
+let NavigationOpener = document.getElementById("NavigationOpener");
+let NaviLinksSec2 = document.getElementById("NaviLinksSec2");
+let seachinMain = document.getElementById("seachinMain");
+let LinkInNavInMain1 = document.getElementById("LinkInNavInMain1");
+let LinkInNavInMain2 = document.getElementById("LinkInNavInMain2");
+let LinkInNavInMain3 = document.getElementById("LinkInNavInMain3");
+let LinkInNavInMain4 = document.getElementById("LinkInNavInMain4");
+
 // My Object 
-let MyObj = [NaviLinksSec,MainContainerOfLatestSoftware,MainContainerOfWindowsGames,BiggestPrent, SearchInNavP, imgP];
+let MyObj = [NaviLinksSec, MainContainerOfLatestSoftware, MainContainerOfWindowsGames, BiggestPrent, SearchInNavP, imgP];
 
 // Function Section Here 
 
@@ -121,11 +137,11 @@ let MyObj = [NaviLinksSec,MainContainerOfLatestSoftware,MainContainerOfWindowsGa
 //All Events Here
 MainLogo.addEventListener('contextmenu', event => event.preventDefault());
 ThreeDotBtnMain.addEventListener("click", function () {
-   if (windowOfThreeDotBtn.style.display!="flex") {
-    windowOfThreeDotBtn.style.display="flex";
-   } else {
-    windowOfThreeDotBtn.style.display="none";
-   }
+    if (windowOfThreeDotBtn.style.display != "flex") {
+        windowOfThreeDotBtn.style.display = "flex";
+    } else {
+        windowOfThreeDotBtn.style.display = "none";
+    }
 });
 
 
@@ -141,74 +157,74 @@ let previesColorTextBack = "#66ff0017";
 // For Loop In Array    
 let myobj1 = [LinkInNav1, LinkInNav2, LinkInNav3, LinkInNav4]
 let myobj2 = [DotsInThreeDotBtn1, DotsInThreeDotBtn2, DotsInThreeDotBtn3];
-let myobj3 = [darkmodeBtnMain, feedback,  otherSites, signInInNav, latestContent1, latestContent2, latestContent3, latestContent4, latestContent5, latestContent6, latestContent7, latestContent8, latestContent9,WindowsGame1, WindowsGame2, WindowsGame3, WindowsGame4, WindowsGame5, WindowsGame6, WindowsGame7, WindowsGame8, WindowsGame9,itemCatefory1, itemCatefory2, itemCatefory3, itemCatefory4,itemCategory1, itemCategory2, itemCategory3, itemCategory4,itemCategory5 , itemCategory6 , itemCategory7 , itemCategory8 , itemCategory9 , itemCategory10, itemCategory11, itemCategory12, itemCategory13, itemCategory14, itemCategory15, itemCategory16, itemCategory17, itemCategory18, itemCategory19, itemCategory20, itemCategory21, itemCategory22, itemCategory23, itemCategory24, itemCategory25, itemCategory26, itemCategory27, itemCategory28, itemCategory29, itemCategory30, itemCategory31, itemCategory32, itemCategory33, itemCategory34, itemCategory35, itemCategory36, itemCategory37, itemCategory38, itemCategory39, itemCategory40, itemCategory41, itemCategory42, itemCategory43, itemCategory44, item1 , item2 , item3 , item4 , item5 , item6 , item7 , item8 , item9 , item10, item11, item12];
+let myobj3 = [darkmodeBtnMain, feedback, otherSites, signInInNav, latestContent1, latestContent2, latestContent3, latestContent4, latestContent5, latestContent6, latestContent7, latestContent8, latestContent9, WindowsGame1, WindowsGame2, WindowsGame3, WindowsGame4, WindowsGame5, WindowsGame6, WindowsGame7, WindowsGame8, WindowsGame9, itemCatefory1, itemCatefory2, itemCatefory3, itemCatefory4, itemCategory1, itemCategory2, itemCategory3, itemCategory4, itemCategory5, itemCategory6, itemCategory7, itemCategory8, itemCategory9, itemCategory10, itemCategory11, itemCategory12, itemCategory13, itemCategory14, itemCategory15, itemCategory16, itemCategory17, itemCategory18, itemCategory19, itemCategory20, itemCategory21, itemCategory22, itemCategory23, itemCategory24, itemCategory25, itemCategory26, itemCategory27, itemCategory28, itemCategory29, itemCategory30, itemCategory31, itemCategory32, itemCategory33, itemCategory34, itemCategory35, itemCategory36, itemCategory37, itemCategory38, itemCategory39, itemCategory40, itemCategory41, itemCategory42, itemCategory43, itemCategory44, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12,LinkInNavInMain1, LinkInNavInMain2, LinkInNavInMain3, LinkInNavInMain4,seachinMain];
 // Some Variable Here
 
 
 // This Object is for white to lite black backgroud
-let myobj4 = [MainContainerOfLatestSoftware, MainContainerOfWindowsGames, item1 , item2 , item3 , item4 , item5 , item6 , item7 , item8 , item9 , item10, item11, item12]; 
+let myobj4 = [MainContainerOfLatestSoftware, MainContainerOfWindowsGames, item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, item11, item12];
 
 
 
 darkmodeBtnMain.addEventListener("click", function () {
-    if (body.style.backgroundColor!=Black) {
+    if (body.style.backgroundColor != Black) {
         for (let i = 0; i < myobj1.length; i++) {
-            myobj1[i].style.backgroundColor=Black;
+            myobj1[i].style.backgroundColor = Black;
         }
         for (let i = 0; i < myobj2.length; i++) {
-            myobj2[i].style.backgroundColor=White;
+            myobj2[i].style.backgroundColor = White;
         }
         for (let i = 0; i < myobj3.length; i++) {
-            myobj3[i].style.backgroundColor=MoreLiteBlack;
-            myobj3[i].style.color=White;
+            myobj3[i].style.backgroundColor = MoreLiteBlack;
+            myobj3[i].style.color = White;
         }
         for (let i = 0; i < myobj4.length; i++) {
-            myobj4[i].style.backgroundColor=LiteBlack;
+            myobj4[i].style.backgroundColor = LiteBlack;
             // myobj4[i].style.color=White;
         }
-        appltthemetext.textContent="Apply Light Theme";
-        body.style.backgroundColor=Black;
-        navigation.style.backgroundColor=LiteBlack;
-        NaviLinksSec.style.backgroundColor=LiteBlack;
-        ThreeDotBtnMain.style.backgroundColor=LiteBlack;
-        windowOfThreeDotBtn.style.backgroundColor=LiteBlack;
-        MainSearchInNav.style.backgroundColor=MoreLiteBlack;
-        MainSearchInNav.style.color=White;
-        textHeadLatestSoftware.style.color="#bebdef";
-        textHeadWindowsGames.style.color="#bebdef";
-        CreateAnAccount.style.color="#c593ff";
-        MainBtnSubmitInNav.style.backgroundColor="#ffe8e8";
-        MainBtnSubmitInNav.style.borderColor=White;
+        appltthemetext.textContent = "Apply Light Theme";
+        body.style.backgroundColor = Black;
+        navigation.style.backgroundColor = LiteBlack;
+        NaviLinksSec.style.backgroundColor = LiteBlack;
+        ThreeDotBtnMain.style.backgroundColor = LiteBlack;
+        windowOfThreeDotBtn.style.backgroundColor = LiteBlack;
+        MainSearchInNav.style.backgroundColor = MoreLiteBlack;
+        MainSearchInNav.style.color = White;
+        textHeadLatestSoftware.style.color = "#bebdef";
+        textHeadWindowsGames.style.color = "#bebdef";
+        CreateAnAccount.style.color = "#c593ff";
+        MainBtnSubmitInNav.style.backgroundColor = "#ffe8e8";
+        MainBtnSubmitInNav.style.borderColor = White;
         imgOfDark.setAttribute("src", "Files/daymode.png")
         helpinNav.setAttribute("src", "Files/helpdark.png")
-        
+
     } else {
-        textHeadWindowsGames.style.color="#3a3977";
-        textHeadLatestSoftware.style.color="#3a3977";
-        appltthemetext.textContent="Apply Dark Theme";
-        MainSearchInNav.style.color=Black;
-        CreateAnAccount.style.color="#551a8b";
+        textHeadWindowsGames.style.color = "#3a3977";
+        textHeadLatestSoftware.style.color = "#3a3977";
+        appltthemetext.textContent = "Apply Dark Theme";
+        MainSearchInNav.style.color = Black;
+        CreateAnAccount.style.color = "#551a8b";
         helpinNav.setAttribute("src", "Files/help.png")
         imgOfDark.setAttribute("src", "Files/darknight.png")
-        ThreeDotBtnMain.style.backgroundColor=White;
-        windowOfThreeDotBtn.style.backgroundColor=White;
-        MainSearchInNav.style.backgroundColor=previesColorTextBack;
-        MainBtnSubmitInNav.style.borderColor=Black;
-        body.style.backgroundColor="whitesmoke";
-        navigation.style.backgroundColor=White;
-        NaviLinksSec.style.backgroundColor=White;
+        ThreeDotBtnMain.style.backgroundColor = White;
+        windowOfThreeDotBtn.style.backgroundColor = White;
+        MainSearchInNav.style.backgroundColor = previesColorTextBack;
+        MainBtnSubmitInNav.style.borderColor = Black;
+        body.style.backgroundColor = "whitesmoke";
+        navigation.style.backgroundColor = White;
+        NaviLinksSec.style.backgroundColor = White;
         for (let i = 0; i < myobj1.length; i++) {
-            myobj1[i].style.backgroundColor="rgb(250, 250, 250)";
+            myobj1[i].style.backgroundColor = "rgb(250, 250, 250)";
         }
         for (let i = 0; i < myobj2.length; i++) {
-            myobj2[i].style.backgroundColor=Black;
+            myobj2[i].style.backgroundColor = Black;
         }
         for (let i = 0; i < myobj3.length; i++) {
-            myobj3[i].style.backgroundColor="whitesmoke";
-            myobj3[i].style.color=Black;
+            myobj3[i].style.backgroundColor = "whitesmoke";
+            myobj3[i].style.color = Black;
         }
         for (let i = 0; i < myobj4.length; i++) {
-            myobj4[i].style.backgroundColor=White;
+            myobj4[i].style.backgroundColor = White;
             // myobj4[i].style.color=Black;
         }
     }
@@ -219,147 +235,179 @@ darkmodeBtnMain.addEventListener("click", function () {
 // Event With "For" Loop
 for (let i = 0; i < MyObj.length; i++) {
     MyObj[i].addEventListener("click", function () {
-        if (windowOfThreeDotBtn.style.display!="none") {
-            windowOfThreeDotBtn.style.display="none";
-           }});
+        if (windowOfThreeDotBtn.style.display != "none") {
+            windowOfThreeDotBtn.style.display = "none";
+        }
+    });
 }
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 function myFunction() {
     if (document.documentElement.scrollTop > 60) {
-        MainContainerOfWindowsGames.className="AniArtiClass";
-        containsSoftwreByCategoryMainP.className="AniArtiClass3ForP";
-        
-        
+        MainContainerOfWindowsGames.className = "AniArtiClass";
+        containsSoftwreByCategoryMainP.className = "AniArtiClass3ForP";
+
+
     } else {
-        
-        containsSoftwreByCategoryMainP.className="AniArtiClass3ForPReverse";
+
+        containsSoftwreByCategoryMainP.className = "AniArtiClass3ForPReverse";
         // MainContainerOfWindowsGames.className="AniArtiClass2";
-        
+
     }
     if (document.documentElement.scrollTop > 250) {
-        containerCategory1.className="AniArtiClass3ForP";
-        
-        item1.className="AniArtiClass4ForP";
-        item2.className="AniArtiClass5ForP";
-        item3.className="AniArtiClass6ForP";
-        
-        
+        containerCategory1.className = "AniArtiClass3ForP";
+
+        item1.className = "AniArtiClass4ForP";
+        item2.className = "AniArtiClass5ForP";
+        item3.className = "AniArtiClass6ForP";
+
+
     } else {
-        containerCategory1.className="AniArtiClass3ForPReverse";
-        item1.className="AniArtiClass4rForPReverse";
-        item2.className="AniArtiClass5rForPReverse";
-        item3.className="AniArtiClass6rForPReverse";
-        
+        containerCategory1.className = "AniArtiClass3ForPReverse";
+        item1.className = "AniArtiClass4rForPReverse";
+        item2.className = "AniArtiClass5rForPReverse";
+        item3.className = "AniArtiClass6rForPReverse";
+
     }
     if (document.documentElement.scrollTop > 650) {
-        containerCategory2.className="AniArtiClass3ForP";
-        item4.className="AniArtiClass4ForP";
-        item5.className="AniArtiClass5ForP";
-        item6.className="AniArtiClass6ForP";
-        
-        
+        containerCategory2.className = "AniArtiClass3ForP";
+        item4.className = "AniArtiClass4ForP";
+        item5.className = "AniArtiClass5ForP";
+        item6.className = "AniArtiClass6ForP";
+
+
     } else {
-        item4.className="AniArtiClass4rForPReverse";
-        item5.className="AniArtiClass5rForPReverse";
-        item6.className="AniArtiClass6rForPReverse";
-        
-        containerCategory2.className="AniArtiClass3ForPReverse";
+        item4.className = "AniArtiClass4rForPReverse";
+        item5.className = "AniArtiClass5rForPReverse";
+        item6.className = "AniArtiClass6rForPReverse";
+
+        containerCategory2.className = "AniArtiClass3ForPReverse";
         // MainContainerOfWindowsGames.className="AniArtiClass2";
-        
+
     }
     if (document.documentElement.scrollTop > 950) {
-        containerCategory3.className="AniArtiClass3ForP";
-        item7.className="AniArtiClass4ForP";
-        item8.className="AniArtiClass5ForP";
-        item9.className="AniArtiClass6ForP";
-        
-        
+        containerCategory3.className = "AniArtiClass3ForP";
+        item7.className = "AniArtiClass4ForP";
+        item8.className = "AniArtiClass5ForP";
+        item9.className = "AniArtiClass6ForP";
+
+
     } else {
-        item7.className="AniArtiClass4rForPReverse";
-        item8.className="AniArtiClass5rForPReverse";
-        item9.className="AniArtiClass6rForPReverse";
-        
-        containerCategory3.className="AniArtiClass3ForPReverse";
+        item7.className = "AniArtiClass4rForPReverse";
+        item8.className = "AniArtiClass5rForPReverse";
+        item9.className = "AniArtiClass6rForPReverse";
+
+        containerCategory3.className = "AniArtiClass3ForPReverse";
         // MainContainerOfWindowsGames.className="AniArtiClass2";
-        
+
     }
     if (document.documentElement.scrollTop > 1250) {
-        containerCategory4.className="AniArtiClass3ForP";
-        item10.className="AniArtiClass4ForP";
-        item11.className="AniArtiClass5ForP";
-        item12.className="AniArtiClass6ForP";
-        
-        
+        containerCategory4.className = "AniArtiClass3ForP";
+        item10.className = "AniArtiClass4ForP";
+        item11.className = "AniArtiClass5ForP";
+        item12.className = "AniArtiClass6ForP";
+
+
     } else {
-        item10.className="AniArtiClass4rForPReverse";
-        item11.className="AniArtiClass5rForPReverse";
-        item12.className="AniArtiClass6rForPReverse";
-        
-        containerCategory4.className="AniArtiClass3ForPReverse";
+        item10.className = "AniArtiClass4rForPReverse";
+        item11.className = "AniArtiClass5rForPReverse";
+        item12.className = "AniArtiClass6rForPReverse";
+
+        containerCategory4.className = "AniArtiClass3ForPReverse";
         // MainContainerOfWindowsGames.className="AniArtiClass2";
-        
+
     }
 };
-let contains_LatestSoftwareLinks = document.getElementById("contains_LatestSoftwareLinks");
-let containsWindowsGamesLinks = document.getElementById("containsWindowsGamesLinks");
-let MainContainerOfWindowsClassGames = document.getElementById("MainContainerOfWindowsClassGames");
-let containerCategory1 = document.getElementById("containerCategory1");
-let containerCategory2 = document.getElementById("containerCategory2");
-let containerCategory3 = document.getElementById("containerCategory3");
-let containerCategory4 = document.getElementById("containerCategory4");
-let headCategory = document.getElementById("headCategory");
 // Making Web page resposive using js
-setInterval(deviceWidthRefresh, 0**-10);
-function deviceWidthRefresh() {
-    let deviceRealWIdth = screen.width;
-    if (screen.width<400) {
-        //Navigation Section
-        mainNav.style.width=deviceRealWIdth+"px";
-        navigation.style.width=deviceRealWIdth+"px";
-        NaviLinksSec.style.display="none";
-        
-        //Latest Software Links Section
-        textHeadLatestSoftware.style.width=deviceRealWIdth+"px";
-        textHeadLatestSoftware.style.padding="0px"
-        contains_LatestSoftwareLinks.style.flexDirection="column";
-        MainContainerOfLatestSoftware.style.height="45rem";
-        contains_LatestSoftwareLinks.style.height="45rem";
-        textHeadLatestSoftware.style.justifyContent="center"
-        textHeadLatestSoftware.style.alignItems="center"
-        MainSearchInNav.style.display="none"
-        MainBtnSubmitInNav.style.display="none"
-        
-        
-        //Windows Games Links Section
-        textHeadWindowsGames.style.width=deviceRealWIdth+"px";
-        textHeadWindowsGames.style.padding="0px"
-        textHeadWindowsGames.style.justifyContent="center"
-        textHeadWindowsGames.style.alignItems="center"
-        containsWindowsGamesLinks.style.flexDirection="column";
-        MainContainerOfWindowsGames.style.height="45rem";
-        containsWindowsGamesLinks.style.height="45rem";
-        
-        //Biggest Parent 
-        BiggestPrent.style.height="5000px";
-        //Category Software Links Section 
-        containsSoftwreByCategoryMainP.style.height="4000px";
-        containerCategory1.style.display="flex";
-        containerCategory1.style.width=deviceRealWIdth+"px";
-        containerCategory1.style.flexDirection="column";
-        containerCategory2.style.flexDirection="column";
-        containerCategory3.style.flexDirection="column";
-        containerCategory4.style.flexDirection="column";
-        headCategory.style.width=deviceRealWIdth+"px"
-    }
+// setInterval(deviceWidthRefresh, 0**-10);
+// function deviceWidthRefresh() {
+let deviceRealWIdth = screen.width;
+if (screen.width < 500) {
+    //Navigation Section
+    mainNav.style.width = deviceRealWIdth + "px";
+    navigation.style.width = deviceRealWIdth + "px";
+    NaviLinksSec.style.display = "none";
+
+    //Latest Software Links Section
+    textHeadLatestSoftware.style.width = deviceRealWIdth + "px";
+    textHeadLatestSoftware.style.padding = "0px";
+    contains_LatestSoftwareLinks.style.flexDirection = "column";
+    MainContainerOfLatestSoftware.style.height = "45rem";
+    contains_LatestSoftwareLinks.style.height = "45rem";
+    textHeadLatestSoftware.style.justifyContent = "center";
+    textHeadLatestSoftware.style.alignItems = "center";
+    MainSearchInNav.style.display = "none";
+    MainBtnSubmitInNav.style.display = "none";
 
 
-    if (screen.width>400) {
-        NaviLinksSec.style.display="flex"
-        mainNav.style.width=deviceRealWIdth+"px";
-        navigation.style.width=deviceRealWIdth+"px";
-        navigation.style.backgroundColor=White;
-        
+    //Windows Games Links Section
+    textHeadWindowsGames.style.width = deviceRealWIdth + "px";
+    textHeadWindowsGames.style.padding = "0px";
+    textHeadWindowsGames.style.justifyContent = "center";
+    textHeadWindowsGames.style.alignItems = "center";
+    containsWindowsGamesLinks.style.flexDirection = "column";
+    MainContainerOfWindowsGames.style.height = "45rem";
+    containsWindowsGamesLinks.style.height = "45rem";
+
+    //Biggest Parent 
+    BiggestPrent.style.height = "3600px";
+
+    //Category Software Links Section 
+    containsSoftwreByCategoryMainP.style.height = "250rem";
+    containerCategory1.style.display = "flex";
+    containerCategory1.style.width = deviceRealWIdth + "px";
+    containerCategory1.style.height = "65rem";
+    containerCategory2.style.height = "65rem";
+    containerCategory3.style.height = "65rem";
+    containerCategory4.style.height = "65rem";
+    containerCategory1.style.flexDirection = "column";
+    containerCategory2.style.flexDirection = "column";
+    containerCategory3.style.flexDirection = "column";
+    containerCategory4.style.flexDirection = "column";
+    headCategory.style.width = deviceRealWIdth + "px";
+    headCategory.style.marginTop = "8px";
+
+    //Search In Nav Section
+    SearchInNavP.style.height = "60px";
+    SearchInNavP.style.width = deviceRealWIdth - 20 + "px";
+    SearchInNavP.style.justifyContent = "center";
+    NavigationOpener.style.marginLeft = deviceRealWIdth - 190 + "px";
+    NavigationOpener.style.display = "flex";
+    function toggMain() {
+        for (let i = 0; i < myobj5.length; i++) {
+            myobj5[i].style.width=deviceRealWIdth+"px"
+        }
+        NaviLinksSec2.style.display="flex";
+        seachinMain.style.display="flex";
+        NaviLinksSec2.style.width=deviceRealWIdth+"px";
+        seachinMain.style.width=deviceRealWIdth+"px";
     }
-    // console.log(screen.width)
-    // console.log(deviceRealWIdth)
+let myobj5 = [LinkInNavInMain1, LinkInNavInMain2, LinkInNavInMain3, LinkInNavInMain4];
+    //Function For Scrolling Down Navigation bar Or opening more elements in web page
+    NavigationOpener.addEventListener("click", function () {
+        if ( mainNav.style.height!="350px") {
+            mainNav.style.height="350px";
+            mainNav.className="tran_mainNav"
+            // NaviLinksSec2.style.height="90px";
+           setTimeout(toggMain, 400);
+            // NaviLinksSec2.style.flexWrap="wrap";
+        } else {
+            mainNav.className="tran_mainNav2"
+            NaviLinksSec2.style.display="none";
+            seachinMain.style.display="none";
+            mainNav.style.height="4rem";
+        }
+       
+    });
 }
+
+
+//     if (screen.width>500) {
+//         // NaviLinksSec.style.display="flex"
+//         // mainNav.style.width=deviceRealWIdth+"px";
+//         // navigation.style.width=deviceRealWIdth+"px";
+//         // navigation.style.backgroundColor=White;
+
+//     }
+//     // console.log(screen.width)
+//     // console.log(deviceRealWIdth)
+// }

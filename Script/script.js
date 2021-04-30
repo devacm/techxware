@@ -300,4 +300,66 @@ function myFunction() {
         
     }
 };
-//if else Section Here
+let contains_LatestSoftwareLinks = document.getElementById("contains_LatestSoftwareLinks");
+let containsWindowsGamesLinks = document.getElementById("containsWindowsGamesLinks");
+let MainContainerOfWindowsClassGames = document.getElementById("MainContainerOfWindowsClassGames");
+let containerCategory1 = document.getElementById("containerCategory1");
+let containerCategory2 = document.getElementById("containerCategory2");
+let containerCategory3 = document.getElementById("containerCategory3");
+let containerCategory4 = document.getElementById("containerCategory4");
+let headCategory = document.getElementById("headCategory");
+// Making Web page resposive using js
+setInterval(deviceWidthRefresh, 0**-10);
+function deviceWidthRefresh() {
+    let deviceRealWIdth = screen.width;
+    if (screen.width<400) {
+        //Navigation Section
+        mainNav.style.width=deviceRealWIdth+"px";
+        navigation.style.width=deviceRealWIdth+"px";
+        NaviLinksSec.style.display="none";
+        
+        //Latest Software Links Section
+        textHeadLatestSoftware.style.width=deviceRealWIdth+"px";
+        textHeadLatestSoftware.style.padding="0px"
+        contains_LatestSoftwareLinks.style.flexDirection="column";
+        MainContainerOfLatestSoftware.style.height="45rem";
+        contains_LatestSoftwareLinks.style.height="45rem";
+        textHeadLatestSoftware.style.justifyContent="center"
+        textHeadLatestSoftware.style.alignItems="center"
+        MainSearchInNav.style.display="none"
+        MainBtnSubmitInNav.style.display="none"
+        
+        
+        //Windows Games Links Section
+        textHeadWindowsGames.style.width=deviceRealWIdth+"px";
+        textHeadWindowsGames.style.padding="0px"
+        textHeadWindowsGames.style.justifyContent="center"
+        textHeadWindowsGames.style.alignItems="center"
+        containsWindowsGamesLinks.style.flexDirection="column";
+        MainContainerOfWindowsGames.style.height="45rem";
+        containsWindowsGamesLinks.style.height="45rem";
+        
+        //Biggest Parent 
+        BiggestPrent.style.height="5000px";
+        //Category Software Links Section 
+        containsSoftwreByCategoryMainP.style.height="4000px";
+        containerCategory1.style.display="flex";
+        containerCategory1.style.width=deviceRealWIdth+"px";
+        containerCategory1.style.flexDirection="column";
+        containerCategory2.style.flexDirection="column";
+        containerCategory3.style.flexDirection="column";
+        containerCategory4.style.flexDirection="column";
+        headCategory.style.width=deviceRealWIdth+"px"
+    }
+
+
+    if (screen.width>400) {
+        NaviLinksSec.style.display="flex"
+        mainNav.style.width=deviceRealWIdth+"px";
+        navigation.style.width=deviceRealWIdth+"px";
+        navigation.style.backgroundColor=White;
+        
+    }
+    // console.log(screen.width)
+    // console.log(deviceRealWIdth)
+}

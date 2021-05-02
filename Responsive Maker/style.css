@@ -1,1374 +1,374 @@
-/* Customizing ScrollBar  */
-::-webkit-scrollbar-thumb{
-    background-color: rgb(167, 167, 167);
-    border-radius: 01rem;
-    
-}
-::-webkit-scrollbar-button{
-    background-color: rgba(245, 245, 245, 0);
-    /* display: none; */
-    height: 0.3rem;
-}
 ::-webkit-scrollbar{
-    background-color: rgba(255, 255, 255, 0);
-    width: 0.5rem;
-    
+    background: rgba(255, 0, 0, 0);
+    width: 0.6rem;
+    border-radius: 10rem;
 }
-
-body{
-    background-color: whitesmoke;
-    margin: 0pc;
-    /* height: 2000px; */
-}
-.MainNavArtiClass{
-    animation: MainNav ease-in-out infinite 1s 0.2s both 1;
-}
-@keyframes MainNav {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-#mainNav{
-    background-color: rgba(190, 190, 190, 0.425);
-    width: 100%;
-    height: 4rem;
-    position: relative;
-    z-index: 30;
-    /* overflow: hidden; */
-    
-}
-#navigation{
-    background-color: white;
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-/* Navigation link Section  */
-#NaviLinksSec{
-    background-color: white;
-    /* width: 40rem; */
-    height: 4rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-}
-.AllLinkInNav{
-    background-color: rgb(250, 250, 250);
-    width: 6rem;
-    height: 2rem;
-    position: relative;
-    text-decoration: none;
-    color: rgb(44, 44, 44);
-    font: caption;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: bold;
-    font-size: 1.2rem;
-    border-radius: 0.2rem;
-    
-}
-
-.AllLinkInNav:hover{
-    background-color: #4949490c;
-    color: black;
-}
-#LinkInNav1{
-    width: 9rem;
-    color: rgb(255, 106, 0);
-    border: 1px solid rgb(255, 106, 0);
-}
-#LinkInNav2{
-    color: rgb(4, 0, 255);
-    border: 1px solid rgb(4, 0, 255);
-}
-#LinkInNav3{
-    width: 7.7rem;
-    color: rgb(168, 0, 219);
-    border: 1px solid rgb(168, 0, 219);
-}
-#LinkInNav4{
-    width: 7.1rem;
-    color: rgb(255, 15, 67);
-    border: 1px solid rgb(255, 15, 67);
-}
-
-/* Main Logo Branding section */
-#imgP{
-    width: 5rem;
-    height: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#MainLogo{
-    width: 5.1rem;
-    height: 3.1rem;
-}
-
-/* Search In Navigation section */
-#MainSearchInNav{
-    background-color: #66ff0017;
-    width: 13rem;
-    height: 2rem;
-    color: black;
-    font: caption;
-    outline: none;
-    border: none;
-    border: 1px solid gray;
-    padding: 0px 1rem;
-}
-#MainSearchInNav::placeholder{
-    color: rgb(148, 148, 148);
-    /* font: caption; */
-
-}
-#SearchInNavP{
-    width: 32.5rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#MainBtnSubmitInNav{
-    width: 3rem;
-    height: 2.07rem;
-    margin: 0pc;
-    padding: 0pc;
-    outline: none;
-    background-color: #ff000017;
-    border: none;
-    cursor: pointer;
-    border: 1px solid black;
-}
-#MainImgInSubInNav{
-    margin: 0pc;
-    padding: 0pc;
-    width: 1.8rem;
-    height: 1.8rem;
-}
-
-/* three Dot Btn Main  */
-#threeDotBtnMainP{
-    width: 2rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-#ThreeDotBtnMain{
-    width: 1rem;
-    height: 2.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    background-color: white;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-.dotsInThreeDotBtn{
-    width: 0.5rem;
-    height: 0.5rem;
-    background-color: rgb(0, 0, 0);
+::-webkit-scrollbar-thumb{
+    background: rgba(97, 97, 97, 0.781);
     border-radius: 10rem;
 }
 
-/* Window Of three Dot Btn Section  */
-#windowOfThreeDotBtn{
-    display: none;
-    justify-content: space-evenly;
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    scroll-behavior: smooth;
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    width: 11rem;
-    height: 14rem;
-    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 6rem;
+    /* background: linear-gradient(to right, rgba(255, 0, 0, 0.473),rgba(104, 55, 55, 0.342), rgb(0, 0, 0)); */
+}
+#sec::before{
+    content: "";
+    background: linear-gradient(to bottom , rgba(255, 0, 0, 0.329), rgba(0, 0, 255, 0.377));
+    width: 100%;
+    min-height: 100vh;
     position: absolute;
-    top: 3.5rem;
-    right: 0.7rem;
-    z-index: 12;
-    border: 1px solid  rgb(224, 174, 174);
-    
-    /* Adding Animation To Beautify this  */
-    animation-name: windowOfThreeDotBtn;
-    animation-duration: 0.2s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
+    z-index: -12;
 }
-@keyframes windowOfThreeDotBtn {
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 10;
-    }
+#logoMain{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 25rem;
+    height: 6rem;
+    background-color: rgba(247, 0, 0, 0);
 }
 
-/* Dark theme Switcher section */
-#darkmodeBtnMain{
-    display: flex;
-    width: 11rem;
-    height: 2rem;
-    background-color: whitesmoke;
-    /* border:  1px solid violet; */
-    border:  none;
-    outline: none;
-    justify-content: space-evenly;
-    align-items: center;
+#MainOffLogo{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-left: 0.4rem;
+}
+#technicalTitle{
+    width: 17rem;
+    height: 2em;
     font: caption;
-    font-size: 1rem;
-    font-weight:500;
-    cursor: pointer;
-}
-#imgOfDark{
-    width: 1.3rem;
-    height: 1.3rem;
-}
-#starFeed{
-    width: 1.3rem;
-    height: 1.3rem;
-}
-#helpinNav{
-    width: 1.3rem;
-    height: 1.3rem;
-    
-}
-/* FeedBack Section  */
-#feedback{
-    display: flex;
-    width: 11rem;
-    height: 2rem;
-    background-color: whitesmoke;
-    /* border:  1px solid violet; */
-    border:  none;
-    outline: none;
-    justify-content: space-evenly;
-    align-items: center;
-    font: caption;
-    font-size: 1rem;
-    font-weight:500;
-    cursor: pointer;
+    font-weight: 600;
     text-decoration: none;
-    color: black;
-    
-}
-#otherSites{
+    font-size: 1.8rem;
+    color: white;
+    margin: 0px;
     display: flex;
-    width: 11rem;
-    height: 2rem;
-    background-color: whitesmoke;
-    /* border:  1px solid violet; */
-    border:  none;
-    outline: none;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    /* background-color: red; */
+}
+#span{
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(2, 255, 149));
+    font: caption;
+    font-weight: 700;
+    font-variant: normal;
+    text-decoration: none;
+    font-size: 3rem;
+    border-radius: 100%;
+    transform: translate(4px, 7px);
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+/* Navigator Section  */
+#navigator{
+    width: 60%;
+    height: 3rem;
+    display: flex;
     justify-content: center;
     align-items: center;
-    font: caption;
-    font-size: 1rem;
-    font-weight:500;
-    cursor: pointer;
+    color: white;
     text-decoration: none;
-    color: black;
-    
-}
-#signInInNav{
     display: flex;
-    width: 11rem;
-    height: 2rem;
-    background-color: whitesmoke;
-    border:  none;
-    outline: none;
-    justify-content: space-evenly;
-    align-items: center;
-    font: caption;
+    text-decoration: none;
     font-size: 1.1rem;
-    font-weight:600;
-    cursor: pointer;
-    background-color: #ff8800;
-    color: black;
-}
-#help{
-    padding: 0pc;
-    margin: 0pc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 1rem;
-    font: caption;
-    font-size: 1rem;
-    font-weight:500;
-}
-/* Biggest Perent In HTML  */
-#BiggestPrent{
-    /* background: linear-gradient(to top, #fff, rgb(173, 62, 62)); */
-    height: 100%;
-    width: 100%;
-    /* border:  2px solid red; */
-    background-color: transparent;
-}
-
-
-/* Latest Software Section  */
-#MainContainerOfLatestSoftware{
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    /* border: 1px solid whitesmoke; */
-    margin-top: 8rem;
-    opacity: 0.1;
-    width: 100%;
-    animation: MainLatestSoftwareOnHome ease-in-out 1s 0.2s both 1;
-    
-    height: 18rem;
-}
-@keyframes MainLatestSoftwareOnHome{
-    from{
-        margin-top: 6rem;
-        opacity: 0.1;
-    }
-    to{
-        margin-top: 1rem;
-        opacity: 1;
-    }
-}
-#textHeadLatestSoftware{
-    font: caption;
-    color: #3a3977;
-    width: 98.75%;
-    background-color: rgba(145, 145, 145, 0.342);
+    font-weight: 500;
+    /* width: 100%; */
     height: 2rem;
-    margin: 0pc;
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-
-    /* justify-content: center; */
-}
-#contains_LatestSoftwareLinks{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-    height: 20rem;
-    width: 100%;
-    /* border: 2px solid red; */
     flex-direction: row;
-}
-#latestSoftwaresContain3_1{
-    flex-direction: column;
-    display: flex;
-    width: 18rem;
     justify-content: space-evenly;
     align-items: center;
-    height: 13.5rem;
-    /* border:  2px solid red; */
 }
-#latestSoftwaresContain3_2{
-    flex-direction: column;
-    display: flex;
-    width: 18rem;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 13.5rem;
-    /* border:  2px solid red; */
-}
-#latestSoftwaresContain3_3{
-    flex-direction: column;
-    display: flex;
-    width: 18rem;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 13.5rem;
-    /* border:  2px solid red; */
-}
-#latestSoftwaresContain3_4{
-    flex-direction: column;
-    display: flex;
-    width: 18rem;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 13.5rem;
-    /* border:  2px solid red; */
-}
-#latestSoftwaresContain3_5{
-    flex-direction: column;
-    display: flex;
-    width: 18rem;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 13.5rem;
-    /* border:  2px solid red; */
-}
-#latestSoftwaresContain3_6{
-    flex-direction: column;
-    display: flex;
-    width: 18rem;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 13.5rem;
-    /* border:  2px solid red; */
-}
-.latestContents{
-    width: 18rem;
-    height: 3rem;
-    background-color: whitesmoke;
-    /* margin: 0rem 3rem;
-    margin-top: 1rem; */
-    text-decoration: none;
-    color: black;
-    font: caption;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    /* background-color: linear-gradient(to right, #0400ff); */
-    
-
-}
-.latestSoftwareIcons{
-    width: 2rem;
-    height: 2rem;
-    margin: 0px 1rem;
-}
-#showMoreBtn1{
-    width: 100%;
-    height: 3rem;
-    /* background-color: yellow; */
-    /* margin: 0.5rem; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#MainShowMoreBtn1{
-    background-color: whitesmoke;
-    /* border: 1px solid red; */
-    outline: none;
-    width: 8rem;
-    font: caption;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: none;
-    height: 2rem;
-    cursor: pointer;
-}
-#ArrowDown1{
-    width: 1rem;
-    height: 1rem;
-}
-
-/* Windows Games Section  */
-.AniArtiClass{
-    /* opacity: 1; */
-    animation: ArtiAni1 ease-in-out 0.8s 0.1s both 1;
-    animation-fill-mode: forwards;
-    
-}
-@keyframes ArtiAni1{
-    from{
-        transform: translateY(8rem);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        
-        transform: translateY(0rem);
-    }
-}
-.AniArtiClass2{
-    /* opacity: 0.1; */
-    animation: ArtiAni2 ease-in-out 0.8s 0.1s both 1;
-    
-}
-@keyframes ArtiAni2{
-    from{
-        transform: translateY(0rem);
-        opacity: 1;
-    }
-    to{
-        
-        opacity: 0;
-        transform: translateY(8rem);
-    }
-}
-#MainContainerOfWindowsGames{
-    display: flex;
-    background-color: white;
-    flex-direction: column;
-    margin-top: 1rem;
-    opacity: 0.1;
-    width: 100%;
-    height: 18rem;
-}
-#textHeadWindowsGames{
-    
-    font: caption;
-    color: rgb(99, 53, 53);
-    
-    width: 98.75%;
-    background-color: rgba(145, 145, 145, 0.342);
-    height: 2rem;
-    margin: 0pc;
-    padding-left: 1rem;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-}
-#containsWindowsGamesLinks{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    /* flex-wrap: wrap; */
-}
-.WindowsGames{
-    width: 18rem;
-    height: 3rem;
-    background-color: whitesmoke;
-    margin: 0rem 3rem;
-    margin-top: 1rem;
-    text-decoration: none;
-    color: black;
-    font: caption;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-
-}
-.WindowsGamesIcons{
-    width: 2rem;
-    height: 2rem;
-    margin: 0px 1rem;
-}
-#showMoreBtn2{
-    width: 100%;
-    height: 3rem;
-    /* background-color: yellow; */
-    /* margin: 0.5rem; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#WindowsGame8{
-    margin-bottom: 0.5rem;
-}
-#MainShowMoreBtn2{
-    background-color: whitesmoke;
-    /* border: 1px solid red; */
-    outline: none;
-    width: 8rem;
-    font: caption;
-    font-size: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: none;
-    height: 2rem;
-    cursor: pointer;
-}
-#ArrowDown2{
-    width: 1rem;
-    height: 1rem;
-}
-
-/* Software Categorized  */
-#headCategory{
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 2rem;
-    background-color: white;
-    font: caption;
-    font-size: 1.4rem;
-    margin: 0pc;
-}
-#containsSoftwreByCategoryMainP{
-    opacity: 0;
-    transform: translateY(8rem);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 90.5rem;
-    background-color: transparent;
-}
-.sameThreeCategoryClass{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-    /* background-color: transparent; */
-}
-.imagesCategoryClass{
-    width: 2.5rem;
-    height: 2.5rem;
-    margin: 0px 1rem;
-
-}
-.AniArtiClass3ForP{
-    animation: Art1 ease-in-out 0.7s 0s both 1;
-}
-@keyframes Art1 {
-    from{
-        transform: translateY(8rem);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        
-        transform: translateY(0rem);
-    }
-}
-.AniArtiClass4ForP{
-    animation: Art4 ease-in-out 0.7s 0s both 1;
-}
-@keyframes Art4 {
-    from{
-        transform: translateY(8rem);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        
-        transform: translateY(0rem);
-    }
-}
-.AniArtiClass5ForP{
-    animation: Art5 ease-in-out 0.7s 0.3s both 1;
-}
-@keyframes Art5 {
-    from{
-        transform: translateY(8rem);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        
-        transform: translateY(0rem);
-    }
-}
-.AniArtiClass6ForP{
-    animation: Art6 ease-in-out 0.7s 0.6s both 1;
-}
-@keyframes Art6 {
-    from{
-        transform: translateY(8rem);
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-        
-        transform: translateY(0rem);
-    }
-}
-.AniArtiClass3ForPReverse{
-    animation: Art2 ease-in-out 0.7s 0s both 1;
-}
-@keyframes Art2 {
-    from{
-        transform: translateY(0rem);
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-        transform: translateY(8rem);
-    }
-}
-.AniArtiClass4rForPReverse{
-    animation: Art4r ease-in-out 1s 0.2s both 1;
-}
-@keyframes Art4r {
-    from{
-        transform: translateY(0rem);
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-        transform: translateY(8rem);
-    }
-}
-.AniArtiClass5rForPReverse{
-    animation: Art5r ease-in-out 1s 0.5s both 1;
-}
-@keyframes Art5r {
-    from{
-        transform: translateY(0rem);
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-        transform: translateY(8rem);
-    }
-}
-.AniArtiClass6rForPReverse{
-    animation: Art6r ease-in-out 1s 0.8s both 1;
-}
-@keyframes Art6r {
-    from{
-        transform: translateY(0rem);
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-        transform: translateY(8rem);
-    }
-}
-
-#item1{
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item2{
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item3{
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item4{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item5{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item6{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item7{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item8{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item9{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item10{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item11{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#item12{
-    
-    transform: translateY(8rem);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20rem;
-    height: 20rem;
-    font: caption;
-    font-size: 1.2rem;
-    background-color: white;
-}
-#containerCategory1{
-    background-color: transparent;
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    transform: translateY(8rem);
-    /* border:  2px solid red; */
-}
-#containerCategory2{
-    background-color: transparent;
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    transform: translateY(8rem);
-    /* border:  2px solid red; */
-}
-#containerCategory3{
-    background-color: transparent;
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    transform: translateY(8rem);
-    /* border:  2px solid red; */
-}
-#containerCategory4{
-    /* border:  2px solid red; */
-    background-color: transparent;
-    width: 100%;
-    height: 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    transform: translateY(8rem);
-}
-.cateorized{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    background-color: whitesmoke;
-    width: 18rem;
-    height: 3rem;
-    color: black;
-    font: caption;
-    font-size: 1.1rem;
-}
-#itemCatefory5{
-    display: flex;
-    justify-content: center;
-}
-
-
-/* All Media Qurries  */
-/* @media (min-width:640px) and ( max-width: 1115px) {
-#mainNav{
-    width: 1115px;
-    background-color: red;
-}
-#navigation{
-    width: 1115px;
-}
-#BiggestPrent{
-    width: 1115px;
-}
-#textHeadLatestSoftware{
-    width: 1115px;
-}
-} */
-
-/* @media (min-width:380px) and ( max-width: 640px) {
-    #mainNav{
-        width: 640px;
-        height: 80px;
-    }
-    #navigation{
-        height: 80px;
-    }
-    #LinkInNav4{
-        display: none;
-    }
-    #MainSearchInNav{
-        display: none;
-    }
-    #NaviLinksSec{
-        width: 640px;
-    }
-    #SearchInNavP{
-        width: 100px;
-    }
-    #MainBtnSubmitInNav{
-        height: 60px;
-        width: 60px;
-    }
-    #MainImgInSubInNav{
-        height: 40px;
-        width: 40px;
-    }
-    #ThreeDotBtnMain{
-        height: 60px;
-        width: 60px;
-
-    }
-    .dotsInThreeDotBtn{
-        width: 13px;
-        height: 13px;
-    }
-    #windowOfThreeDotBtn{
-        height: 300px;
-        width: 300px;
-        top: 80px;
-    }
-    #feedback{
-        width: 280px;
-        height: 50px;
-    }
-    #otherSites{
-        width: 280px;
-        height: 50px;
-    }
-    #darkmodeBtnMain{
-        width: 280px;
-        height: 50px;
-    }
-    #darkmodeBtnMain{
-        width: 280px;
-        height: 50px;
-    }
-    #contains_LatestSoftwareLinks{
-        flex-direction: row;
-        width: 640px;
-        height: 500px;
-    }
-    #MainContainerOfLatestSoftware{
-        width: 640px;
-    }
-    .latestContents{
-        width: 200px;
-    }
-    #containsWindowsGamesLinks{
-        flex-direction: row;
-    }
-    #MainContainerOfLatestSoftware{
-        height: 300px;
-    }
-    #latestSoftwaresContain3_2{
-        display: none;
-    }
-    #MainContainerOfWindowsGames{
-        width: 640px;
-        height: 300px;
-    }
-    #latestSoftwaresContain3_6{
-        display: none;
-    }
-    .WindowsGames{
-        width: 200px;
-    }
-    #containsSoftwreByCategoryMainP{
-        width: 640px;
-        height: 4100px;
-
-    }
-    #headCategory{
-        width: 640px;
-        height: 2rem;
-    }
-    #containerCategory1{
-        flex-direction: column;
-        width: 640px;
-        height: 1000px;
-    }
-    #containerCategory2{
-        flex-direction: column;
-        width: 640px;
-        height: 1000px;
-    }
-    #containerCategory3{
-        flex-direction: column;
-        width: 640px;
-        height: 1000px;
-    }
-    #containerCategory4{
-        flex-direction: column;
-        width: 640px;
-        height: 1000px;
-    }
-    #NavigationOpener{
-        display: none;
-    }
-}
-#NavigationOpener{
-    display: none;
-} */
-/* 
-@media screen and (max-width: 400px) {
-    #mainNav{
-        width: 400px;
-        height: 80px;
-    }
-    #navigation{
-        height: 80px;
-    }
-    #NaviLinksSec{
-        display: none;
-    }
-    #MainSearchInNav{
-        display: none;
-    }
-    #NaviLinksSec{
-        width: 400px;
-    }
-    #SearchInNavP{
-        width: 100px;
-    }
-    #MainBtnSubmitInNav{
-        height: 50px;
-        width: 60px;
-        border-radius: 3px;
-        display: none;
-    }
-    #MainImgInSubInNav{
-        height: 40px;
-        width: 40px;
-    }
-    #ThreeDotBtnMain{
-        height: 60px;
-        width: 60px;
-
-    }
-    .dotsInThreeDotBtn{
-        width: 13px;
-        height: 13px;
-    }
-    #windowOfThreeDotBtn{
-        height: 300px;
-        width: 300px;
-        top: 80px;
-    }
-    #textHeadLatestSoftware{
-        width: 400px;
-        font-size: 1.3rem;
-        justify-content: center;
-        padding: 0px;
-    }
-    #textHeadWindowsGames{
-        padding: 0px;
-        width: 400px;
-        font-size: 1.3rem;
-        justify-content: center;
-    }
-    #feedback{
-        width: 280px;
-        height: 50px;
-    }
-    #otherSites{
-        width: 280px;
-        height: 50px;
-    }
-    #darkmodeBtnMain{
-        width: 280px;
-        height: 50px;
-    }
-    #darkmodeBtnMain{
-        width: 280px;
-        height: 50px;
-    }
-    #contains_LatestSoftwareLinks{
-        flex-direction: column;
-        width: 400px;
-        height: 500px;
-    }
-    #MainContainerOfLatestSoftware{
-        width: 400px;
-    }
-    .latestContents{
-        width: 200px;
-    }
-    #containsWindowsGamesLinks{
-        flex-direction: column;
-    }
-    #MainContainerOfLatestSoftware{
-        height: 488px;
-    }
-    #latestSoftwaresContain3_2{
-        display: none;
-    }
-    #MainContainerOfWindowsGames{
-        width: 400px;
-        height: 505px;
-    }
-    #latestSoftwaresContain3_5{
-        display: none;
-    }
-    #latestSoftwaresContain3_6{
-        display: flex;
-    }
-    .WindowsGames{
-        width: 200px;
-    }
-    #containsSoftwreByCategoryMainP{
-        width: 400px;
-        height: 4100px;
-
-    }
-    #headCategory{
-        width: 400px;
-        height: 2rem;
-    }
-    #containerCategory1{
-        flex-direction: column;
-        width: 400px;
-        height: 1000px;
-    }
-    #containerCategory2{
-        flex-direction: column;
-        width: 400px;
-        height: 1000px;
-    }
-    #containerCategory3{
-        flex-direction: column;
-        width: 400px;
-        height: 1000px;
-    }
-    #containerCategory4{
-        flex-direction: column;
-        width: 400px;
-        height: 1000px;
-    }
-    #showMoreBtn2{
-        margin-top: 1rem;
-    }
-} */
-/* #SearchInNavP{
-    margin-left: 9rem;
-    width: 90px;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-} */
-#NavigationOpener{
-    width: 60px;
-    height: 50px;
-    border: none;
-    outline: none;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: transparent;
-    border: 2px solid whitesmoke;
-}
-.threelineClass{
-    width: 40px;
-    height: 5px;
-    border-radius: 18%;
-    background-color: rgb(74, 105, 151);
-}
-#NaviLinksSec2{
-    /* background: linear-gradient(to top, rgba(0, 0, 255, 0.212), rgba(255, 0, 0, 0.212)); */
-    width: 40rem;
-    height: 12rem;
-    display: none;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    /* border: 2px solid red; */
-    margin-top: 1rem;
-}
-.AllLinkInNavInMain{
-    background-color: whitesmoke;
-    /* width: 6rem; */
-    height: 2rem;
-    position: relative;
-    text-decoration: none;
-    color: rgb(44, 44, 44);
-    font: caption;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font: bold;
-    font-size: 1.2rem;
-    border-radius: 0.2rem;
-    /* margin: 0px 30px; */
-    
-}
-/* .AllLinkInNavInMain:hover{
-    background-color: #4949490c;
-    color: black;
-} */
-/* #LinkInNavInMain1{
-    width: 9rem;
-    color: rgb(255, 106, 0);
-    border: 1px solid rgb(255, 106, 0);
-}
-#LinkInNavInMain2{
-    color: rgb(4, 0, 255);
-    border: 1px solid rgb(4, 0, 255);
-}
-#LinkInNavInMain3{
-    width: 7.7rem;
-    color: rgb(168, 0, 219);
-    border: 1px solid rgb(168, 0, 219);
-}
-#LinkInNavInMain4{
-    width: 7.1rem;
-    color: rgb(255, 15, 67);
-    border: 1px solid rgb(255, 15, 67);
-} */
-.tran_mainNav{
-    animation: mainTran ease-in-out 0.4s 0.1s 1 both ;
-}
-@keyframes mainTran {
-    from{
-        height: 4rem;
-    }
-    to{
-        height: 350px;
-    }
-}
-.tran_mainNav2{
-    animation: mainTran2 ease-in-out 0.4s 0.1s 1 both ;
-}
-@keyframes mainTran2 {
-    from{
-        height: 350px;
-    }
-    to{
-        height: 4rem;
-    }
-}
-/* Search In Navigation section */
-#MainSearchInNavInMain{
-    background-color: #66ff0017;
-    width: 18rem;
-    height: 2rem;
-    color: black;
-    font: caption;
-    outline: none;
-    border: none;
-    border: 1px solid gray;
-    padding: 0px 1rem;
-}
-#MainSearchInNavInMain::placeholder{
-    color: rgb(148, 148, 148);
-    /* font: caption; */
-    
-}
-#seachinMain{
-    width: 32.5rem;
-    height: 3rem;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    /* border:  2px solid red; */
-    background-color: whitesmoke;
-    margin-top: 1rem;
-}
-#MainBtnSubmitInNavInMain{
+#moreNavi{
+    background-color: rgba(255, 0, 0, 0);
     width: 3rem;
-    height: 2.07rem;
-    margin: 0pc;
-    padding: 0pc;
-    outline: none;
-    background-color: #ff000017;
-    border: none;
-    cursor: pointer;
-    border: 1px solid black;
+    height: 2.5rem;
+    /* backdrop-filter: blur(10px); */
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border:  1px solid rgb(173, 0, 0);
+
 }
-#MainImgInSubInNavInMain{
-    margin: 0pc;
-    padding: 0pc;
-    width: 1.8rem;
-    height: 1.8rem;
+.divs{
+    
+    background: linear-gradient(to right, rgb(255, 63, 63) , rgb(112, 112, 245));
+    width: 2.5rem;
+    border-radius: 10rem;
+    height: 0.3rem;
+}
+/* #navigator ul{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 100%;
+    height: 2rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+} */
+.ancher{
+    color: #dc9696;
+    text-decoration: none;
+    font: caption;
+    height: 1.5rem;
+}
+#search_icon::after{
+    content: "";
+    border: 3px solid red;
+    position: absolute;
+    z-index: 12;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    transform: translate(-6px, -16px);
+}
+#search_icon::before{
+    content: "";
+    border-right: 3px solid red;
+    position: absolute;
+    z-index: 12;
+    width: 1rem;
+    height: 1rem;
+    transform: rotateZ(-45deg);
+}
+#search_icon{
+    width: 2rem;
+    /* height: 1rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(8px);
+}
+.ancher:hover{
+    color: #c2b5b5;
+    text-decoration: none;
+    font: caption;
+    border-bottom: 1px solid red;
+}
+/* Sec1 Section  */
+#sec1{
+    width: 100%;
+    background: rgba(255, 0, 0, 0);
+    min-height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+#parent1{
+    width: 100%;
+    min-height: 70vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#slog{
+    width: 60rem;
+    /* background-color: red; */
+    display: flex;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    color: #ff9eb3;
+    font: caption;
+    font-size: 4rem;
+    font-weight: 700;
+    /* background-color: white; */
+    margin: 0px;
+
+}
+#downImageMain{
+    width: 7rem;
+    height: 7rem;
+    
+
+}
+#MinorP{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60rem;
+    /* height: 10rem; */
+}
+#aboutweb{
+    width: 55rem;
+    height: 7rem;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: wheat; */
+}
+
+
+
+/* Media quirries */
+@media screen and (max-width: 1100px){
+    #parent1{
+        /* display: flex; */
+        justify-content: space-evenly;
+        flex-direction: column;
+        /* border:  2px solid red; */
+        width: 100%
+    }
+    #aboutweb{
+        width: 55rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    .ancher{
+        display: none;
+    }
+    #slog{
+        font-size: 3.6rem;
+        margin: 0px;
+        width: 56rem;
+    }
+    #aboutweb{
+        font-size: 1.1rem;
+        width: 48rem;
+        margin: 0px;
+    }
+    #moreNavi{
+        display: flex;
+        margin-left:1rem;
+        /* position: absolute; */
+        /* right: 1rem; */
+    }
+
+    #navigator{
+        justify-content: unset;
+        width: 8rem;
+    }
+}
+@media screen and (max-width: 925px){
+    #MinorP{
+        width: 40rem;
+    }
+    #slog{
+        width: 40rem;
+        font-size: 2.5rem;
+    }
+    #aboutweb{
+        width: 33rem;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 625px){
+    #MinorP{
+        width: 25rem;
+    }
+    #slog{
+        width: 25rem;
+        text-align: center;
+        /* border: 2px solid red; */
+        font-size: 2.5rem;
+        height: 6rem;
+    }
+    #aboutweb{
+        width: 22rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 456px){
+    #nav{
+        flex-direction: column;
+    }
+    #logoMain{
+        flex-direction: column;
+        height: 10rem;
+        margin-top: 1rem;
+        /* border:  2px solid red; */
+    }
+    #MainOffLogo{
+        width: 5rem;
+        height: 5rem;
+        /* margin: 1rem; */
+    }
+    #sec{
+        /* border: 2px solid red; */
+        height: 15rem;
+        /* background: red; */
+        justify-content: center;
+        align-items: center;
+    }
+    #technicalTitle{
+        width: 22rem;
+        height: 2em;
+        font: caption;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 2.7rem;
+        color: white;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: default;
+        /* background-color: red; */
+    }
+    #navigator{
+        width: 100%;
+        height: 3rem;
+        /* margin-left: 150%; */
+        justify-content: space-around;
+    }
+    #sec1{
+        height: 36rem;
+    }
+    #parent1{
+        justify-content: unset;
+    }
+}
+@media screen and (max-width: 400px){
+    #technicalTitle{
+        width:15rem;
+        font-size: 1.8rem;
+    }
+    #MainOffLogo{
+        width: 4rem;
+        height: 4rem;
+    }
+    #slog{
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.3rem;
+    }
+    #aboutweb{
+        width: 17rem;
+        height: 17rem;
+        font-size: 1.3rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #MinorP{
+        width: 12rem;
+    }
+    #logoMain{
+        width: 12rem;
+    }
 }

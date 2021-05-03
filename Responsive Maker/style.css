@@ -25,7 +25,7 @@ body{
     content: "";
     background: linear-gradient(to bottom , rgba(255, 0, 0, 0.329), rgba(0, 0, 255, 0.377));
     width: 100%;
-    min-height: 100vh;
+    height: 37rem;
     position: absolute;
     z-index: -12;
 }
@@ -165,10 +165,11 @@ body{
 #sec1{
     width: 100%;
     background: rgba(255, 0, 0, 0);
-    min-height: 86vh;
+    min-height: 30rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     /* background-color: red; */
 }
 #parent1{
@@ -239,6 +240,37 @@ body{
     }
 }
 @media screen and (max-width: 1000px){
+    /* .ancher{
+        display: none;
+    } */
+    #search_icon{
+        display: flex;
+    }
+    #slog{
+        font-size: 3.6rem;
+        margin: 0px;
+        width: 56rem;
+    }
+    #aboutweb{
+        font-size: 1.1rem;
+        width: 48rem;
+        margin: 0px;
+    }
+    #moreNavi{
+        display: none;
+        margin-left:1rem;
+        /* position: absolute; */
+        /* right: 1rem; */
+    }
+
+    #navigator{
+        justify-content: space-evenly;
+        width: 26rem;
+        flex-direction: row;
+        /* background-color: red; */
+    }
+}
+@media screen and (max-width: 720px){
     .ancher{
         display: none;
     }
@@ -298,20 +330,24 @@ body{
     #nav{
         flex-direction: column;
     }
+    #downImageMain{
+        width: 5.6rem;
+        height: 5.6rem;
+    }
     #logoMain{
-        flex-direction: column;
+        flex-direction: row;
         height: 10rem;
         margin-top: 1rem;
         /* border:  2px solid red; */
     }
     #MainOffLogo{
-        width: 5rem;
-        height: 5rem;
+        width: 3.7rem;
+        height: 3.7rem;
         /* margin: 1rem; */
     }
     #sec{
         /* border: 2px solid red; */
-        height: 15rem;
+        height: 9rem;
         /* background: red; */
         justify-content: center;
         align-items: center;
@@ -322,7 +358,7 @@ body{
         font: caption;
         font-weight: 600;
         text-decoration: none;
-        font-size: 2.7rem;
+        font-size: 2.3rem;
         color: white;
         margin: 0px;
         display: flex;
@@ -338,20 +374,26 @@ body{
         justify-content: space-around;
     }
     #sec1{
-        height: 36rem;
+        height: 26rem;
     }
     #parent1{
-        justify-content: unset;
+        justify-content: center;
+        /* background-color: red; */
     }
 }
 @media screen and (max-width: 400px){
     #technicalTitle{
-        width:15rem;
-        font-size: 1.8rem;
+        width:19rem;
+        font-size: 1.9rem;
+        /* background-color: red; */
+    }
+    #nav{
+        width: 100%;
     }
     #MainOffLogo{
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
+        margin-left: 1rem;
     }
     #slog{
         width: 12rem;
@@ -369,6 +411,22 @@ body{
         width: 12rem;
     }
     #logoMain{
-        width: 12rem;
+        width: 100%;
+        /* background-color: red; */
+    }}
+    @media screen and (max-width: 310px){
+        #technicalTitle{
+            font-size: 1.6rem;
+        }
+
     }
-}
+    @media screen and (max-width: 286px){
+        #technicalTitle{
+            font-size: 1.4rem;
+        }
+        #MainOffLogo{
+            width: 2.7rem;
+            height: 2.7rem;
+            margin-left: 1rem;
+        }
+    }

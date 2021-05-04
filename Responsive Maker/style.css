@@ -924,9 +924,9 @@ align-items: center;
         font-size: 1.7rem;
     }
     #aboutweb{
-        width: 17rem;
-        height: 17rem;
-        font-size: 1.3rem;
+        width: 12rem;
+        height: 8rem;
+        font-size: 0.8rem;
         display: flex;
         flex-wrap: wrap;
     }

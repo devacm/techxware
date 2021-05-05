@@ -240,16 +240,10 @@ body{
     content: "Download Software & Games";
     position: absolute;
     width: 0;
-    height: 4rem;
     left: 2.1rem;
-    /* display: flex; */
-    /* flex-direction: row; */
     white-space: nowrap;
-    top: -4px;
-    /* background-color: black; */
     color: red;
     overflow: hidden;
-    border-right: 3px solid red;
     animation: wid ease-in-out 10s 0s infinite both ;
 
 }

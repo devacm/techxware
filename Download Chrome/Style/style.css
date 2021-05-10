@@ -252,7 +252,7 @@ h1{
     width: 6rem;
     height: 6rem;
     position: relative;
-    background-image: url(/Files/chrome-Google_Chrome_logo.png);
+    background-image: url(Files/chrome-Google_Chrome_logo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

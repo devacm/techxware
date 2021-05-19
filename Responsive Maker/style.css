@@ -221,16 +221,17 @@ body {
 }
 
 #slog {
+ 
     width: 60rem;
     display: flex;
-    height: 5rem;
+    height: 4rem;
     color: rgb(255, 208, 0);
     font: caption;
     font-size: 4rem;
     font-weight: 700;
     margin: 0px;
     position: relative;
-
+    justify-content: center;
 }
 
 

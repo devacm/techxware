@@ -8,7 +8,10 @@
     background: rgba(97, 97, 97, 0.781);
     border-radius: 10rem;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+}
 #p1 {
     width: 20rem;
     display: flex;
@@ -220,45 +223,16 @@ body {
 #slog {
     width: 60rem;
     display: flex;
-    height: 4rem;
-    justify-content: center;
-    align-items: center;
-    color: transparent;
+    height: 5rem;
+    color: rgb(255, 208, 0);
     font: caption;
     font-size: 4rem;
     font-weight: 700;
     margin: 0px;
-    -webkit-text-stroke: 2px rgba(255, 0, 0, 0.164);
     position: relative;
 
 }
 
-#slog::before {
-    content: "Download Software & Games";
-    position: absolute;
-    width: 0;
-    left: 2.1rem;
-    white-space: nowrap;
-    color: red;
-    overflow: hidden;
-    animation: wid ease-in-out 10s 0s infinite both;
-
-}
-
-@keyframes wid {
-
-    0%,
-    10%,
-    100% {
-        width: 0px;
-
-    }
-
-    70%,
-    90% {
-        width: 96%;
-    }
-}
 
 #downImageMain {
     width: 7rem;
@@ -587,6 +561,8 @@ a {
     outline: none;
     border: none;
     background-color: rgba(0, 0, 0, 0.336);
+    display: flex;
+    align-items: center;
 
     width: 70%;
 }
@@ -602,6 +578,8 @@ a {
     border: none;
     width: 70%;
     background-color: rgba(0, 0, 0, 0.336);
+    display: flex;
+    align-items: center;
 
 }
 
@@ -617,6 +595,8 @@ a {
     outline: none;
     border: none;
     background-color: rgba(0, 0, 0, 0.336);
+    display: flex;
+    align-items: center;
 
 }
 
@@ -655,7 +635,7 @@ a {
     cursor: pointer;
     color: #cc8b94;
     background-color: rgba(255, 255, 255, 0.082);
-    border-radius: 3%;
+    /* border-radius: 3%; */
     box-shadow: 0px 0px 1px 0.5px white;
     position: relative;
     display: flex;
@@ -671,7 +651,7 @@ a {
 }
 
 #submit>span {
-    background: linear-gradient(to right, red, yellow);
+    background: white;
 }
 
 #submit:hover span:nth-child(2) {
@@ -713,7 +693,7 @@ a {
     transform-origin: right;
     transition: transform 0.5s;
     transition-delay: 0.5s;
-    background: linear-gradient(to right, yellow, red);
+    background: liwhite
 }
 
 #submit span:nth-child(2) {
@@ -724,7 +704,7 @@ a {
     height: 3rem;
     position: absolute;
     left: 0px;
-    background: linear-gradient(to top, red, yellow);
+    background: white
 }
 
 #submit span:nth-child(3) {
@@ -737,7 +717,7 @@ a {
     transform: scaleY(0);
     transition: transform 0.5s;
     transition-delay: 0.5s;
-    background: linear-gradient(to top, yellow, red);
+    background: white
 }
 
 #submit span:nth-child(4) {
@@ -777,12 +757,6 @@ a {
         font-size: 3.6rem;
         margin: 0px;
         width: 56rem;
-    }
-
-    #slog::before {
-        height: 5rem;
-        left: 3rem;
-        top: -1px;
     }
 
     #aboutweb {
@@ -842,12 +816,6 @@ a {
         font-size: 2.5rem;
     }
 
-    #slog::before {
-        height: 3rem;
-        left: 2.7rem;
-        top: 9px;
-    }
-
     #latestSoftware {
         font-size: 2.6rem;
     }
@@ -903,7 +871,7 @@ a {
     }
 
     #sec1 {
-        height: 20rem;
+        height: 30rem;
     }
 
     #slog {
@@ -911,18 +879,6 @@ a {
         text-align: center;
         font-size: 2.5rem;
         height: 6rem;
-    }
-
-    #slog::before {
-        height: 6rem;
-        left: 0.9rem;
-        top: 2px;
-        white-space: pre;
-        overflow: hidden;
-        text-align: center;
-        margin: auto;
-        display: flex;
-        content: "Download Software\a & Games";
     }
 
     #aboutweb {
@@ -938,12 +894,40 @@ a {
         width: 5.6rem;
         height: 5.6rem;
     }
+    #EnterName{
+        height: 2.4rem;
+        font-size: 1.2rem;
+    }
+    #Email{
+        height: 2.4rem;
+        font-size: 1.2rem;
+    }
+    #Somethihng{
+        font-size: 1.2rem;
+        padding-top: 0.3rem;
+
+    }
+    #EnterName::placeholder{
+        color: white;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+    #Email::placeholder{
+        color: white;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+    #Somethihng::placeholder{
+        color: white;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 456px) {
-    #nav {
-        flex-direction: column;
-    }
 
     #downImageMain {
         width: 5.6rem;
@@ -951,16 +935,23 @@ a {
     }
 
     #logoMain {
-        flex-direction: row;
-        height: 10rem;
-        margin-top: 1rem;
+        /* flex-direction: row; */
+        height: 7rem;
+        /* margin-top: 1rem; */
     }
 
     #MainOffLogo {
-        width: 3.7rem;
-        height: 3.7rem;
+        width: 3rem;
+        height: 3rem;
+        margin-left: 1rem;
     }
-
+    #moreNavi{
+        position: absolute;
+        right: 10px;
+    }
+    #search_icon{
+        display: none;
+    }
     #window {
         width: 100%;
     }
@@ -972,12 +963,12 @@ a {
     }
 
     #technicalTitle {
-        width: 22rem;
+        width: 13rem;
         height: 2em;
         font: caption;
         font-weight: 600;
         text-decoration: none;
-        font-size: 2.3rem;
+        font-size: 1.4rem;
         color: white;
         margin: 0px;
         display: flex;
@@ -999,40 +990,50 @@ a {
     #parent1 {
         justify-content: center;
     }
+    
+    #EnterName{
+        height: 2rem;
+        font-size: 1rem;
+    }
+    #Email{
+        height: 2rem;
+        font-size: 1rem;
+    }
+    #Somethihng{
+        font-size: 1rem;
+        padding-top: 0.3rem;
+
+    }
+    #EnterName::placeholder{
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    #Email::placeholder{
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    #Somethihng::placeholder{
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 400px) {
-    #technicalTitle {
-        width: 19rem;
-        font-size: 1.9rem;
-    }
 
     #nav {
         width: 100%;
     }
 
-    #MainOffLogo {
-        width: 3rem;
-        height: 3rem;
-        margin-left: 1rem;
-    }
-
     #slog {
-        width: 12rem;
+        width: 15rem;
         height: 4rem;
-        font-size: 1.3rem;
-    }
-
-    #slog::before {
-        height: 3rem;
-        left: 0.3rem;
-        top: 8px;
-        white-space: pre;
-        overflow: hidden;
-        text-align: center;
-        margin: auto;
-        display: flex;
-        content: "Download \aSoftware & Games";
+        font-size: 1.5rem;
     }
 
     #latestSoftware {
@@ -1057,9 +1058,6 @@ a {
 }
 
 @media screen and (max-width: 310px) {
-    #technicalTitle {
-        font-size: 1.6rem;
-    }
 
     #bigggest {
         width: 20rem;
